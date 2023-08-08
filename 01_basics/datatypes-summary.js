@@ -1,5 +1,5 @@
 //primitive data types
-//call by reference
+//call by value
 // 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
 const score = 100
@@ -41,7 +41,7 @@ const myFunction =function () {
     console.log("hello world");
 }
 
-console.log(typeof anotherId);
+//console.log(typeof anotherId);
 
 //typeof val
 // If val is undefined, return "undefined".
@@ -51,3 +51,26 @@ console.log(typeof anotherId);
 // 8. If val is a Boolean, return "boolean".
 // 9. If val is a Number, return "number".
 // 10. If val is a BigInt, return "bigint".
+
+//Stack (primitive), Heap(Non- primitive)
+
+let myYoutubename = "Sunnyjaiswal"
+
+let anothername = myYoutubename;
+anothername = "mydesign";
+
+// console.log(myYoutubename);
+// console.log(anothername);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email ="usertwo@gmail.com";
+
+console.log(userOne.email);
+
+console.log(userTwo.email);
