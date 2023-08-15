@@ -18,7 +18,7 @@ const regularuser ={
         }
     }
 }
-console.log(regularuser.fullname.userfullname.firstName);
+//console.log(regularuser.fullname.userfullname.firstName);
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -49,10 +49,44 @@ const users = [
 
 users[1].email
 
-console.log(tinderuser);
+// console.log(tinderuser);
 
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
 
-console.log(tinderuser.hasOwnProperty('isLogged'))
+// console.log(tinderuser.hasOwnProperty('isLogged'))
+
+
+//Basically Apna Object Ki Destructuring ke baare me jannenge waise destructuring array ki bhi hoti hain
+
+const course ={
+    coursename : "Js in Hindi",
+    courseprice : "999",
+    courseInstructor : "Hitesh"
+}
+
+// course.courseInstructor
+const {courseInstructor: instructor} =course
+
+console.log(instructor);
+
+// const navbar =({}) =>{
+
+// }
+// navbar(company ="hitesh")
+
+//Jab bhi koi apan kaam ki ke shar pe daal dena pade usse API kehte hain 
+
+
+// {
+//     "coursename" : "Js in Hindi",
+//     "courseprice" : "999",
+//     "courseInstructor" : "Hitesh"
+// }
+ 
+[
+    {},
+    {},
+    {}
+]
