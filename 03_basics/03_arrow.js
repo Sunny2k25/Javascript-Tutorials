@@ -41,7 +41,7 @@ const chai = () =>{
 //const addtwo = (num1,num2) => num1 + num2; 
 // const addtwo = (num1,num2) => (num1 + num2); 
 const addtwo = (num1,num2) => ({
-    username: "Sunny"
+    username: "Sunny"  
 }) 
 
 
