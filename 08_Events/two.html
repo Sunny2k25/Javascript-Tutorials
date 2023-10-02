@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(() => {
+    //     console.log("Sunny");
+    // }, 2000);
+
+    // setTimeout(function (){
+    //     console.log("Sunny");
+    // },2000)
+
+    // const saySunny = function(){
+    //     console.log("Sunny");
+    // }
+    // setTimeout(saySunny,2000);
+
+    const changetext = function(){
+        document.querySelector('h1').innerHTML = "best JS series";
+    }
+    const chanegeme = setTimeout(changetext,2000);
+
+    // clearTimeout(chanegeme)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(chanegeme);
+        console.log("STOOPED");
+    })
+    
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
